@@ -40,3 +40,8 @@ la connexion à l'interface du serveur OTX :
 $cfg['otxurl']      = "http://myotxserver.com/";
 $cfg['otxusername'] = "username";
 $cfg['otxpasswd']   = "password";
+
+Dans le cas où OTX n'est pas installé à la racine du serveur web, il faut nécessairement avoir le / final, sous peine d'avoir une erreur de conversion sur Lodel, due à une 404 :
+$cfg['otxurl']      = "http://myotxserver.com/OTX/";
+$cfg['otxusername'] = "username";
+$cfg['otxpasswd']   = "password";
